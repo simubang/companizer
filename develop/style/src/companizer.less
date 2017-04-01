@@ -1,0 +1,200 @@
+@backcolor: #f5f5f5;
+@maincolor: #fff;
+@sideAndTopColor: #F2F2F2;
+@sideAndTopborder: 2px solid #BDBDBD;
+@paddingmain: 20px;
+@navigationHover: #5868C8;
+.rounded_top {
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+body {
+	font-family: "Arial" sans-serif;
+	background-color: @backcolor;
+	background: -moz-radial-gradient(center, #fff, #d9eaff);
+	background: -webkit-radial-gradient(center, #fff, #d9eaff);
+	background: -o-radial-gradient(center, #fff, #d9eaff);
+	background: -ms-radial-gradient(center, #fff, #d9eaff);
+	background: radial-gradient(center, #fff, #d9eaff);
+}
+
+.navigation {
+	background-color: #1A1F8E ! important;
+}
+
+.nav > li > a {
+	color: #fff ! important;
+	font-weight: bold;
+}
+
+.nav > li > a:hover {
+	background-color: @navigationHover ! important;
+	color: #fff ! important;
+}
+
+#navigation-banner {
+	height: 15px;
+	margin-top: -20px;
+}
+
+#navigation-right {
+	float: right;
+}
+
+#navigation-left {
+	float: left;
+}
+
+#navigation-left , #navigation-right {
+	img {
+		vertical-align: top;
+	}
+}
+
+.navbar-button {
+	background-color: #fff ! important;
+	&:hover , &:focus {
+		background-color: @navigationHover ! important;
+	}
+}
+
+.navbar-button:hover {
+}
+
+.maincontainer {
+	background-color: @maincolor;
+	padding-top: @paddingmain;
+	.rounded_top;
+}
+
+div {
+	.logo {
+		padding: 10px;
+		border: @sideAndTopborder;
+		border-bottom: none;
+		background-color: @sideAndTopColor;
+		.rounded_top;
+	}
+}
+
+.leftbound {
+	float: left;
+}
+
+.rightbound {
+	float: right;
+}
+
+#kategorie {
+	width: 220px;
+	float: left;
+}
+
+.kategorien-content {
+	border: @sideAndTopborder;
+	background-color: @sideAndTopColor;
+}
+
+.kategorie-banner {
+	margin-left: -15px; 
+}
+
+#kategorie-banner-image {
+	width: 15px;
+	height: 23px;
+}
+
+.companizer-short {
+	margin-top: -23px;
+	background-color: @sideAndTopColor;
+	border: @sideAndTopborder;
+	border-top:none;
+}
+
+.maincontent {
+}
+
+  .custom-combobox {
+	position: relative;
+    display: inline-block;
+  }
+  .custom-combobox-toggle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -1px;
+    padding: 0;
+  }
+  .custom-combobox-input {
+    margin: 0;
+    padding: 5px 10px;
+  }
+    .ui-autocomplete {
+    max-height: 300px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+  }
+
+
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// Core variables and mixins
+@import "variables.less";
+@import "mixins.less";
+
+// Reset and dependencies
+@import "normalize.less";
+@import "print.less";
+@import "glyphicons.less";
+
+// Core CSS
+@import "scaffolding.less";
+@import "type.less";
+@import "code.less";
+@import "grid.less";
+@import "tables.less";
+@import "forms.less";
+@import "buttons.less";
+
+// Components
+@import "component-animations.less";
+@import "dropdowns.less";
+@import "button-groups.less";
+@import "input-groups.less";
+@import "navs.less";
+@import "navbar.less";
+@import "breadcrumbs.less";
+@import "pagination.less";
+@import "pager.less";
+@import "labels.less";
+@import "badges.less";
+@import "jumbotron.less";
+@import "thumbnails.less";
+@import "alerts.less";
+@import "progress-bars.less";
+@import "media.less";
+@import "list-group.less";
+@import "panels.less";
+@import "responsive-embed.less";
+@import "wells.less";
+@import "close.less";
+
+// Components w/ JavaScript
+@import "modals.less";
+@import "tooltip.less";
+@import "popovers.less";
+@import "carousel.less";
+
+// Utility classes
+@import "utilities.less";
+@import "responsive-utilities.less";

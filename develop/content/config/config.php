@@ -1,0 +1,9 @@
+<?php
+////////////////////////////////////////////////////////////////////////////////
+// Define constants for database connectivity
+////////////////////////////////////////////////////////////////////////////////
+define('DATABASE_HOST', 'localhost');
+define('DATABASE_NAME', 'companizer');
+define('DATABASE_USER', 'visitor');
+define('DATABASE_PASSWORD', 'Companizer_visitor1122');
+?>
