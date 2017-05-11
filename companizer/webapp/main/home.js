@@ -2,7 +2,7 @@
 
 angular.module('home', [])
 .component('home', {
-    templateUrl: 'main/home.template.html',
+    templateUrl: 'main/home.html',
     controller: function PhoneListController() {
       this.phones = [
         {

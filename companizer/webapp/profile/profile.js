@@ -1,10 +1,10 @@
 'use strict';
 
-angular.module('home', [])
-.component('home', {
-    templateUrl: 'main/home.html',
-    controller: function PhoneListController() {
-      this.phones = [
+angular.module('profile', [])
+.component('profile', {
+    templateUrl: 'profile/profile.html',
+    controller: function ProfileController() {
+      this.profiles = [
         {
           name: 'Nexus S',
           snippet: 'Fast just got faster with Nexus S.'

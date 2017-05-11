@@ -2,6 +2,20 @@
 
 // Define the `phonecatApp` module
 angular.module('companizer', [
-  // ...which depends on the `phoneList` module
-  'home'
-]);
+  'ngRoute',
+  'profile',
+  'home',
+  'navigationcompanizer'
+])
+.config( function config($locationProvider, $routeProvider) {
+
+       $routeProvider.
+         when('/profile', {
+           template: '<profile></profile>'
+         }).
+         when('/home', {
+           template: '<home></home>'
+         }).
+         otherwise('/profile');
+     }
+   );
