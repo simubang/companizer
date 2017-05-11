@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('home').
-component('home', {
-    templateUrl: 'main/home.template.html',
+angular.module('home', [])
+.component('home', {
+    templateUrl: 'main/home.html',
     controller: function PhoneListController() {
       this.phones = [
         {
